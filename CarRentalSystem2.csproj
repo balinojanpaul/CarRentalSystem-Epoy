@@ -319,6 +319,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\CarRentalSystem.sql" />
     <Content Include="Resources\inquire.png" />
     <Content Include="Resources\inquire1.png" />
     <Content Include="Resources\inquire2.png" />
@@ -326,7 +327,6 @@
     <Content Include="Resources\rent_car.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
