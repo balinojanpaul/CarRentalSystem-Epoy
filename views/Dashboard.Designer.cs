@@ -47,6 +47,7 @@
             this.lblUser = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnHome = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuFormDrag1 = new Bunifu.UI.WinForms.BunifuFormDrag();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,8 +74,9 @@
             this.bFormDragDashboard.TitleBarOptions.BunifuFormDrag = this.bFormDragDashboard;
             this.bFormDragDashboard.TitleBarOptions.DoubleClickToExpandWindow = true;
             this.bFormDragDashboard.TitleBarOptions.Enabled = true;
-            this.bFormDragDashboard.TitleBarOptions.TitleBarControl = null;
+            this.bFormDragDashboard.TitleBarOptions.TitleBarControl = this.bunifuPanel1;
             this.bFormDragDashboard.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            this.bFormDragDashboard.FormDragging += new System.EventHandler<Bunifu.UI.WinForms.BunifuFormDrag.FormDraggingEventArgs>(this.bFormDragDashboard_FormDragging);
             // 
             // pnlMain
             // 
@@ -640,6 +642,31 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // bunifuFormDrag1
+            // 
+            this.bunifuFormDrag1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDrag1.ContainerControl = this;
+            this.bunifuFormDrag1.DockIndicatorsOpacity = 0.5D;
+            this.bunifuFormDrag1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDrag1.DockingOptions.DockAll = true;
+            this.bunifuFormDrag1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDrag1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDrag1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDrag1.DockingOptions.DockLeft = true;
+            this.bunifuFormDrag1.DockingOptions.DockRight = true;
+            this.bunifuFormDrag1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDrag1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDrag1.DragOpacity = 0.9D;
+            this.bunifuFormDrag1.Enabled = true;
+            this.bunifuFormDrag1.ParentForm = this;
+            this.bunifuFormDrag1.ShowCursorChanges = true;
+            this.bunifuFormDrag1.ShowDockingIndicators = true;
+            this.bunifuFormDrag1.TitleBarOptions.BunifuFormDrag = this.bunifuFormDrag1;
+            this.bunifuFormDrag1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDrag1.TitleBarOptions.Enabled = true;
+            this.bunifuFormDrag1.TitleBarOptions.TitleBarControl = this.pictureBox1;
+            this.bunifuFormDrag1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
             // Dashboard
             // 
             resources.ApplyResources(this, "$this");
@@ -670,5 +697,6 @@
         private Bunifu.UI.WinForms.BunifuPanel pnlMain;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton22;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton21;
+        private Bunifu.UI.WinForms.BunifuFormDrag bunifuFormDrag1;
     }
 }

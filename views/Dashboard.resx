@@ -635,9 +635,6 @@
   <data name="&gt;&gt;bunifuPanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Dashboard</value>
   </data>
@@ -653,10 +650,19 @@
   <data name="&gt;&gt;bFormDragDashboard.Type" xml:space="preserve">
     <value>Bunifu.UI.WinForms.BunifuFormDrag, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
+  <data name="&gt;&gt;bunifuFormDrag1.Name" xml:space="preserve">
+    <value>bunifuFormDrag1</value>
+  </data>
+  <data name="&gt;&gt;bunifuFormDrag1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuFormDrag, Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Dashboard</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="bunifuFormDrag1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>388, 17</value>
+  </metadata>
 </root>
