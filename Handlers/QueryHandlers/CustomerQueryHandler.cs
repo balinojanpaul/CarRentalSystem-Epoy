@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using CarRentalSystem2.Models;
 using MySql.Data.MySqlClient;
@@ -78,6 +79,45 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
             }
 
             return customer;
+        }
+
+
+        public List<CustomerInquiryRental> GetAllCustomersWithInquiryAndRental()
+        {
+            var customers = new List<CustomerInquiryRental>();
+
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("GetAllCustomersWithInquiryAndRental", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            customers.Add(new CustomerInquiryRental
+                            {
+                                CustomerId = reader["customerId"] != DBNull.Value ? Convert.ToInt32(reader["customerId"]) : 0,
+                                CustomerFirstName = reader["customerFirstName"].ToString(),
+                                CustomerLastName = reader["customerLastName"].ToString(),
+                                EmailAddress = reader["emailAddress"].ToString(),
+                                ContactNumber = reader["contactInfo"].ToString(),
+                                InquiryId = reader["inquiryId"] != DBNull.Value ? Convert.ToInt32(reader["inquiryId"]) : (int?)null,
+                                InquiryStatus = reader["inquiryStatus"] != DBNull.Value ? reader["inquiryStatus"].ToString() : null,
+                                RentalId = reader["rentalId"] != DBNull.Value ? Convert.ToInt32(reader["rentalId"]) : (int?)null,
+                                RentalStartDate = reader["rentalStartDate"] != DBNull.Value ? Convert.ToDateTime(reader["rentalStartDate"]) : (DateTime?)null,
+                                RentalEndDate = reader["rentalEndDate"] != DBNull.Value ? Convert.ToDateTime(reader["rentalEndDate"]) : (DateTime?)null,
+                                RentalStatus = reader["rentalStatus"] != DBNull.Value ? reader["rentalStatus"].ToString() : null,
+                                RentalTotalAmount = reader["rentalTotalAmount"] != DBNull.Value ? Convert.ToDecimal(reader["rentalTotalAmount"]) : (decimal?)null,
+                                RentalCarId = reader["rentalCarId"] != DBNull.Value ? Convert.ToInt32(reader["rentalCarId"]) : (int?)null,
+                            });
+                        }
+                    }
+                }
+            }
+
+            return customers;
         }
         
     }

@@ -235,6 +235,7 @@
     <Compile Include="Models\Analytics.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerInquiryRental.cs" />
     <Compile Include="Models\Inquiry.cs" />
     <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\UserAccount.cs" />
@@ -386,6 +387,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".env" />
     <Content Include="Database\CarRentalSystem.sql" />
     <None Include="Resources\search.png" />
     <None Include="Resources\home.png" />

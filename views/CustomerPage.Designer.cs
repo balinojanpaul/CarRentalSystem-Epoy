@@ -37,12 +37,14 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.cmbFilter = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.dtgAvailableCars = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dtgCustomers = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAvailableCars)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,16 +56,80 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 15;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
+            this.bunifuPanel2.Controls.Add(this.cmbFilter);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel4);
-            this.bunifuPanel2.Controls.Add(this.dtgAvailableCars);
+            this.bunifuPanel2.Controls.Add(this.dtgCustomers);
             this.bunifuPanel2.Controls.Add(this.txtSearch);
             this.bunifuPanel2.Controls.Add(this.pictureBox1);
             this.bunifuPanel2.Location = new System.Drawing.Point(9, 10);
-            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(717, 566);
             this.bunifuPanel2.TabIndex = 2;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.bunifuLabel1.Location = new System.Drawing.Point(386, 29);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(28, 17);
+            this.bunifuLabel1.TabIndex = 42;
+            this.bunifuLabel1.Text = "Filter";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // cmbFilter
+            // 
+            this.cmbFilter.BackColor = System.Drawing.Color.Transparent;
+            this.cmbFilter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.cmbFilter.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbFilter.BorderRadius = 5;
+            this.cmbFilter.Color = System.Drawing.Color.DeepSkyBlue;
+            this.cmbFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmbFilter.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbFilter.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmbFilter.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbFilter.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmbFilter.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmbFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbFilter.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilter.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbFilter.FillDropDown = true;
+            this.cmbFilter.FillIndicator = false;
+            this.cmbFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbFilter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbFilter.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbFilter.FormattingEnabled = true;
+            this.cmbFilter.Icon = null;
+            this.cmbFilter.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbFilter.IndicatorColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbFilter.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbFilter.IndicatorThickness = 2;
+            this.cmbFilter.IsDropdownOpened = false;
+            this.cmbFilter.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.cmbFilter.ItemBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbFilter.ItemForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbFilter.ItemHeight = 26;
+            this.cmbFilter.ItemHighLightColor = System.Drawing.Color.SkyBlue;
+            this.cmbFilter.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmbFilter.ItemTopMargin = 3;
+            this.cmbFilter.Location = new System.Drawing.Point(386, 50);
+            this.cmbFilter.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbFilter.Name = "cmbFilter";
+            this.cmbFilter.Size = new System.Drawing.Size(144, 32);
+            this.cmbFilter.TabIndex = 41;
+            this.cmbFilter.Text = null;
+            this.cmbFilter.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbFilter.TextLeftMargin = 5;
             // 
             // bunifuLabel4
             // 
@@ -73,7 +139,7 @@
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.bunifuLabel4.Location = new System.Drawing.Point(19, 17);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(147, 32);
@@ -82,17 +148,17 @@
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // dtgAvailableCars
+            // dtgCustomers
             // 
-            this.dtgAvailableCars.AllowCustomTheming = true;
+            this.dtgCustomers.AllowCustomTheming = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgAvailableCars.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgAvailableCars.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.dtgAvailableCars.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgAvailableCars.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgAvailableCars.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgCustomers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.dtgCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DeepSkyBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -100,26 +166,26 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgAvailableCars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgAvailableCars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgAvailableCars.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.dtgAvailableCars.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dtgAvailableCars.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dtgAvailableCars.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgAvailableCars.CurrentTheme.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dtgAvailableCars.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dtgAvailableCars.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dtgAvailableCars.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dtgAvailableCars.CurrentTheme.Name = null;
-            this.dtgAvailableCars.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgAvailableCars.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dtgAvailableCars.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dtgAvailableCars.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dtgAvailableCars.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgCustomers.CurrentTheme.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dtgCustomers.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dtgCustomers.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dtgCustomers.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dtgCustomers.CurrentTheme.Name = null;
+            this.dtgCustomers.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgCustomers.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dtgCustomers.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgCustomers.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dtgCustomers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -127,22 +193,22 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgAvailableCars.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgAvailableCars.EnableHeadersVisualStyles = false;
-            this.dtgAvailableCars.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dtgAvailableCars.HeaderBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dtgAvailableCars.HeaderForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dtgAvailableCars.Location = new System.Drawing.Point(19, 102);
-            this.dtgAvailableCars.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtgAvailableCars.Name = "dtgAvailableCars";
-            this.dtgAvailableCars.RowHeadersVisible = false;
-            this.dtgAvailableCars.RowHeadersWidth = 51;
-            this.dtgAvailableCars.RowTemplate.Height = 40;
-            this.dtgAvailableCars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgAvailableCars.Size = new System.Drawing.Size(687, 447);
-            this.dtgAvailableCars.TabIndex = 39;
-            this.dtgAvailableCars.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dtgCustomers.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgCustomers.EnableHeadersVisualStyles = false;
+            this.dtgCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dtgCustomers.HeaderBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dtgCustomers.HeaderForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.Location = new System.Drawing.Point(19, 102);
+            this.dtgCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgCustomers.Name = "dtgCustomers";
+            this.dtgCustomers.RowHeadersVisible = false;
+            this.dtgCustomers.RowHeadersWidth = 51;
+            this.dtgCustomers.RowTemplate.Height = 40;
+            this.dtgCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgCustomers.Size = new System.Drawing.Size(687, 447);
+            this.dtgCustomers.TabIndex = 39;
+            this.dtgCustomers.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // txtSearch
             // 
@@ -174,7 +240,7 @@
             this.txtSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearch.Lines = new string[0];
             this.txtSearch.Location = new System.Drawing.Point(52, 55);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.MaxLength = 32767;
             this.txtSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtSearch.Modified = false;
@@ -200,7 +266,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtSearch.OnIdleState = stateProperties4;
-            this.txtSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearch.Padding = new System.Windows.Forms.Padding(2);
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtSearch.PlaceholderText = "";
@@ -228,7 +294,7 @@
             this.pictureBox1.BackgroundImage = global::CarRentalSystem2.Properties.Resources.search;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(17, 55);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 27);
             this.pictureBox1.TabIndex = 37;
@@ -242,22 +308,26 @@
             this.ClientSize = new System.Drawing.Size(735, 585);
             this.Controls.Add(this.bunifuPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CustomerPage";
             this.Text = "CustomerPage";
+            this.Load += new System.EventHandler(this.CustomerPage_Load);
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAvailableCars)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private Bunifu.UI.WinForms.BunifuDropdown cmbFilter;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
 
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.UI.WinForms.BunifuDataGridView dtgAvailableCars;
+        private Bunifu.UI.WinForms.BunifuDataGridView dtgCustomers;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
     }
 }
