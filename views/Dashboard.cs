@@ -62,6 +62,9 @@ namespace CarRentalSystem2.Views
             this.Close();
         }
 
-      
+        private void bFormDragDashboard_FormDragging(object sender, Bunifu.UI.WinForms.BunifuFormDrag.FormDraggingEventArgs e)
+        {
+
+        }
     }
 }
