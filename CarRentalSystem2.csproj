@@ -277,6 +277,42 @@
     <Compile Include="TestViews\RentCarPage.Designer.cs">
       <DependentUpon>RentCarPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\AvailableCarsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AvailableCarsPage.Designer.cs">
+      <DependentUpon>AvailableCarsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerPage.Designer.cs">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InquiryPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InquiryPage.Designer.cs">
+      <DependentUpon>InquiryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RentCarPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RentCarPage.Designer.cs">
+      <DependentUpon>RentCarPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -285,6 +321,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TestViews\AvailableCarsPageTest.resx">
       <DependentUpon>AvailableCarsPageTest.cs</DependentUpon>
@@ -304,6 +341,27 @@
     <EmbeddedResource Include="TestViews\RentCarPage.resx">
       <DependentUpon>RentCarPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AvailableCarsPage.resx">
+      <DependentUpon>AvailableCarsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerPage.resx">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard.aa-DJ.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InquiryPage.resx">
+      <DependentUpon>InquiryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RentCarPage.resx">
+      <DependentUpon>RentCarPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -320,14 +378,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\CarRentalSystem.sql" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\car2.png" />
+    <None Include="Resources\carrent.png" />
     <Content Include="Resources\inquire.png" />
     <Content Include="Resources\inquire1.png" />
     <Content Include="Resources\inquire2.png" />
     <Content Include="Resources\inquire3.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\inquire4.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\people.png" />
     <Content Include="Resources\rent_car.png" />
+    <None Include="Resources\user.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
