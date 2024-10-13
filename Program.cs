@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using CarRentalSystem2.TestViews;
 using CarRentalSystem2.Views;
@@ -18,7 +19,7 @@ namespace CarRentalSystem2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            Application.Run(new LoginPage());
         }
     }
 }

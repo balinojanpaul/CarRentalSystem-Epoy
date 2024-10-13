@@ -17,6 +17,7 @@ namespace CarRentalSystem2.Views
         {
             InitializeComponent();
         }
+
         private void LoadForm(object form)
         {
             if (pnlMain.Controls.Count > 0)
@@ -30,7 +31,6 @@ namespace CarRentalSystem2.Views
             f.Show();
         }
 
-       
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -49,22 +49,22 @@ namespace CarRentalSystem2.Views
 
         private void btnInquiry_Click(object sender, EventArgs e)
         {
-            LoadForm(new InquiryPage());
+            LoadForm(new InquiryPage(pnlMain));
         }
 
-        private void bunifuButton21_Click(object sender, EventArgs e)
+        private void btnCustomer_Click(object sender, EventArgs e)
         {
             LoadForm(new CustomerPage());
         }
 
-        private void bunifuButton22_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
-        private void bFormDragDashboard_FormDragging(object sender, Bunifu.UI.WinForms.BunifuFormDrag.FormDraggingEventArgs e)
+        private void bFormDragDashboard_FormDragging(object sender,
+            Bunifu.UI.WinForms.BunifuFormDrag.FormDraggingEventArgs e)
         {
-
         }
     }
 }
