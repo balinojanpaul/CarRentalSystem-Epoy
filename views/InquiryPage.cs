@@ -335,8 +335,6 @@ namespace CarRentalSystem2.Views
             // Optional: Set the grid's border style
             dtgCustomerInquiry.BorderStyle = BorderStyle.None;
 
-            // Set the dock style to fill
-            dtgCustomerInquiry.Dock = DockStyle.Fill;
 
             // Set row styling
             dtgCustomerInquiry.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
