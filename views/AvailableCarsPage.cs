@@ -29,6 +29,8 @@ namespace CarRentalSystem2.Views
             _carQueryHandler = new CarQueryHandler(Commons.ConnectionString);
             _carCommandHandler = new CarCommandHandler(Commons.ConnectionString);
             _car = new Car();
+            SetupDataGridView();
+            LoadCarDataIntoDataGrid();
         }
 
         // ------------------------- Listener Functions ------------------------- \\

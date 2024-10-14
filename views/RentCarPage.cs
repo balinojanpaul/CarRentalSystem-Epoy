@@ -239,6 +239,7 @@ namespace CarRentalSystem2.Views
 
         private void RentCarPage_Load(object sender, EventArgs e)
         {
+            SetupDataGridView();
             LoadAvailableCarIdIntoComboBox();
             LoadCarDataIntoDataGrid();
         }
