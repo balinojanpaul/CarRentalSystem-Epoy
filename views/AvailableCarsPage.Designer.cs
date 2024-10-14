@@ -106,6 +106,7 @@
             // dtgCarList
             // 
             this.dtgCarList.AllowCustomTheming = true;
+            this.dtgCarList.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.dtgCarList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -1211,6 +1212,7 @@
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSelectedImage)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

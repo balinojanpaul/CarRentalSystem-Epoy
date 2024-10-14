@@ -39,9 +39,9 @@ namespace CarRentalSystem2.Views
             // Clear the fields first
             ClearFields();
 
-            // Disable first the Car ID text box and the price
-            txtPrice.Enabled = false;
-            txtPrice.ReadOnly = true;
+             // Disable first the Car ID text box and the price
+            //txtPrice.Enabled = false;
+            //txtPrice.ReadOnly = true;
             // cmbStatus.Enabled = false;
 
             // Check if a valid row is selected (not the header)
@@ -59,7 +59,13 @@ namespace CarRentalSystem2.Views
                 txtPrice.Text = car.PricePerDay.ToString(CultureInfo.InvariantCulture);
                 string availability = car.Availability ? "Available" : "Not Available";
                 cmbStatus.SelectedItem = availability;
-                pbSelectedImage.Image = Image.FromFile(car.ImagePath);
+                //MessageBox.Show($"Image Path: {car.ImagePath}");
+
+                if (car.ImagePath != null || string.IsNullOrWhiteSpace(car.ImagePath) || car.ImagePath == "")
+                {
+                    //pbSelectedImage.Image = Image.FromFile(car.ImagePath);
+                }
+                
             }
         }
 
