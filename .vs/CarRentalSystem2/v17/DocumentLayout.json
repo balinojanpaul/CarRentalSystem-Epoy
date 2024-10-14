@@ -1,65 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\",
+  "WorkspaceRootPath": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\inquirypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\inquirypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|c:\\users\\jan paul\\source\\repos\\carrentalsystem-epoy\\views\\availablecarspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\availablecarspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\availablecarspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\availablecarspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\availablecarspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|c:\\users\\steve\\source\\repos\\carrentalsystem2\\views\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|c:\\users\\steve\\source\\repos\\carrentalsystem2\\views\\rentcarpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\rentcarpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\rentcarpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\rentcarpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\rentcarpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\rentcarpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|c:\\users\\jan paul\\source\\repos\\carrentalsystem-epoy\\views\\inquirypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\inquirypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|c:\\users\\jan paul\\source\\repos\\carrentalsystem-epoy\\common\\commons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:common\\commons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|c:\\users\\jan paul\\source\\repos\\carrentalsystem-epoy\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\testviews\\homepagetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\testviews\\homepagetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:testviews\\homepagetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\customerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\customerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\customerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\testviews\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\testviews\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:testviews\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\inquirypage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\inquirypage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\inquirypage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\testviews\\availablecarspagetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\testviews\\availablecarspagetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:testviews\\availablecarspagetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\availablecarspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\availablecarspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:views\\availablecarspage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95433C46-1701-4F21-B30F-71A8C1AC863A}|CarRentalSystem2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,15 +82,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\Program.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -87,51 +99,58 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RentCarPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\RentCarPage.cs",
-              "RelativeDocumentMoniker": "views\\RentCarPage.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\RentCarPage.cs [Design]",
-              "RelativeToolTip": "views\\RentCarPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T04:35:25.101Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AvailableCarsPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\AvailableCarsPage.cs",
-              "RelativeDocumentMoniker": "views\\AvailableCarsPage.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\AvailableCarsPage.cs [Design]",
-              "RelativeToolTip": "views\\AvailableCarsPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T04:06:44.622Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\Dashboard.cs",
-              "RelativeDocumentMoniker": "views\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\Dashboard.cs [Design]",
-              "RelativeToolTip": "views\\Dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T15:59:42.164Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AvailableCarsPage.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\AvailableCarsPage.cs",
+              "RelativeDocumentMoniker": "views\\AvailableCarsPage.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\AvailableCarsPage.cs*",
+              "RelativeToolTip": "views\\AvailableCarsPage.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwB8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T03:58:49.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-14T03:54:17.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Commons.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Common\\Commons.cs",
+              "RelativeDocumentMoniker": "Common\\Commons.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Common\\Commons.cs",
+              "RelativeToolTip": "Common\\Commons.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T03:54:13.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "InquiryPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\InquiryPage.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\InquiryPage.cs",
               "RelativeDocumentMoniker": "views\\InquiryPage.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\InquiryPage.cs [Design]",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\InquiryPage.cs [Design]",
               "RelativeToolTip": "views\\InquiryPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T05:08:36.359Z",
@@ -139,116 +158,149 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RentCarPage.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\RentCarPage.cs",
-              "RelativeDocumentMoniker": "views\\RentCarPage.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\RentCarPage.cs",
-              "RelativeToolTip": "views\\RentCarPage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T04:51:50.681Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\Dashboard.cs",
-              "RelativeDocumentMoniker": "views\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\Dashboard.cs",
-              "RelativeToolTip": "views\\Dashboard.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
+              "Title": "RentCarPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\RentCarPage.cs",
+              "RelativeDocumentMoniker": "views\\RentCarPage.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\RentCarPage.cs [Design]",
+              "RelativeToolTip": "views\\RentCarPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T04:02:20.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T04:35:25.101Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\LoginPage.cs",
-              "RelativeDocumentMoniker": "views\\LoginPage.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\LoginPage.cs [Design]",
-              "RelativeToolTip": "views\\LoginPage.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "AvailableCarsPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\AvailableCarsPage.cs",
+              "RelativeDocumentMoniker": "views\\AvailableCarsPage.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\AvailableCarsPage.cs [Design]*",
+              "RelativeToolTip": "views\\AvailableCarsPage.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T06:27:29.429Z",
+              "WhenOpened": "2024-10-13T04:06:44.622Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\Dashboard.cs",
+              "RelativeDocumentMoniker": "views\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\Dashboard.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\views\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:59:42.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentCarPage.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\RentCarPage.cs",
+              "RelativeDocumentMoniker": "views\\RentCarPage.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\RentCarPage.cs",
+              "RelativeToolTip": "views\\RentCarPage.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAhwPkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T04:51:50.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\Dashboard.cs",
+              "RelativeDocumentMoniker": "views\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\Dashboard.cs",
+              "RelativeToolTip": "views\\Dashboard.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T04:02:20.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\LoginPage.cs",
+              "RelativeDocumentMoniker": "views\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\LoginPage.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\views\\LoginPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T06:27:29.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "HomePage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\HomePage.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\HomePage.cs",
               "RelativeDocumentMoniker": "views\\HomePage.cs",
               "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\HomePage.cs [Design]",
-              "RelativeToolTip": "views\\HomePage.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\views\\HomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T03:47:20.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "HomePageTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\HomePageTest.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\TestViews\\HomePageTest.cs",
               "RelativeDocumentMoniker": "TestViews\\HomePageTest.cs",
               "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\HomePageTest.cs [Design]",
-              "RelativeToolTip": "TestViews\\HomePageTest.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\HomePageTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T05:39:36.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "CustomerPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\CustomerPage.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\views\\CustomerPage.cs",
               "RelativeDocumentMoniker": "views\\CustomerPage.cs",
               "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\views\\CustomerPage.cs [Design]",
-              "RelativeToolTip": "views\\CustomerPage.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\views\\CustomerPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T05:21:31.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "LoginTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\LoginTest.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\TestViews\\LoginTest.cs",
               "RelativeDocumentMoniker": "TestViews\\LoginTest.cs",
               "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\LoginTest.cs [Design]",
-              "RelativeToolTip": "TestViews\\LoginTest.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\LoginTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T17:23:55.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "InquiryPage.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\Views\\InquiryPage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Views\\InquiryPage.Designer.cs",
               "RelativeDocumentMoniker": "Views\\InquiryPage.Designer.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\Views\\InquiryPage.Designer.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Views\\InquiryPage.Designer.cs",
               "RelativeToolTip": "Views\\InquiryPage.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T05:09:10.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T05:09:10.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "AvailableCarsPageTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\AvailableCarsPageTest.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\TestViews\\AvailableCarsPageTest.cs",
               "RelativeDocumentMoniker": "TestViews\\AvailableCarsPageTest.cs",
               "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\AvailableCarsPageTest.cs [Design]",
-              "RelativeToolTip": "TestViews\\AvailableCarsPageTest.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\steve\\source\\repos\\CarRentalSystem2\\TestViews\\AvailableCarsPageTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T05:07:58.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AvailableCarsPage.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\Views\\AvailableCarsPage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Views\\AvailableCarsPage.Designer.cs",
               "RelativeDocumentMoniker": "Views\\AvailableCarsPage.Designer.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\CarRentalSystem2\\Views\\AvailableCarsPage.Designer.cs",
+              "ToolTip": "C:\\Users\\jan paul\\source\\repos\\CarRentalSystem-Epoy\\Views\\AvailableCarsPage.Designer.cs",
               "RelativeToolTip": "Views\\AvailableCarsPage.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
