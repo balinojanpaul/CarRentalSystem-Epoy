@@ -201,6 +201,7 @@
             this.txtSearch.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtSearch.DefaultText = "";
             this.txtSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtSearch.ForeColor = System.Drawing.Color.White;
             this.txtSearch.HideSelection = true;
             this.txtSearch.IconLeft = null;
             this.txtSearch.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -227,12 +228,12 @@
             this.txtSearch.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.White;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtSearch.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.DeepSkyBlue;
             stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.ForeColor = System.Drawing.Color.White;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtSearch.OnIdleState = stateProperties4;
             this.txtSearch.Padding = new System.Windows.Forms.Padding(2);
@@ -698,7 +699,7 @@
             this.btnSelectImage.IdleIconLeftImage = null;
             this.btnSelectImage.IdleIconRightImage = null;
             this.btnSelectImage.IndicateFocus = false;
-            this.btnSelectImage.Location = new System.Drawing.Point(364, 197);
+            this.btnSelectImage.Location = new System.Drawing.Point(346, 207);
             this.btnSelectImage.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectImage.Name = "btnSelectImage";
             this.btnSelectImage.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -744,10 +745,10 @@
             // 
             // pbSelectedImage
             // 
-            this.pbSelectedImage.Location = new System.Drawing.Point(364, 63);
+            this.pbSelectedImage.Location = new System.Drawing.Point(313, 63);
             this.pbSelectedImage.Margin = new System.Windows.Forms.Padding(2);
             this.pbSelectedImage.Name = "pbSelectedImage";
-            this.pbSelectedImage.Size = new System.Drawing.Size(121, 129);
+            this.pbSelectedImage.Size = new System.Drawing.Size(184, 129);
             this.pbSelectedImage.TabIndex = 11;
             this.pbSelectedImage.TabStop = false;
             // 
@@ -790,6 +791,7 @@
             this.txtPrice.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtPrice.DefaultText = "";
             this.txtPrice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtPrice.ForeColor = System.Drawing.Color.White;
             this.txtPrice.HideSelection = true;
             this.txtPrice.IconLeft = null;
             this.txtPrice.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -816,12 +818,12 @@
             this.txtPrice.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.White;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPrice.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.DeepSkyBlue;
             stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.ForeColor = System.Drawing.Color.White;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPrice.OnIdleState = stateProperties8;
             this.txtPrice.Padding = new System.Windows.Forms.Padding(2);
@@ -948,6 +950,7 @@
             this.txtModel.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtModel.DefaultText = "";
             this.txtModel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtModel.ForeColor = System.Drawing.Color.White;
             this.txtModel.HideSelection = true;
             this.txtModel.IconLeft = null;
             this.txtModel.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -974,12 +977,12 @@
             this.txtModel.OnDisabledState = stateProperties10;
             stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.White;
             stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtModel.OnHoverState = stateProperties11;
             stateProperties12.BorderColor = System.Drawing.Color.DeepSkyBlue;
             stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.ForeColor = System.Drawing.Color.White;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtModel.OnIdleState = stateProperties12;
             this.txtModel.Padding = new System.Windows.Forms.Padding(2);
@@ -1042,6 +1045,7 @@
             this.txtBrand.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtBrand.DefaultText = "";
             this.txtBrand.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtBrand.ForeColor = System.Drawing.Color.White;
             this.txtBrand.HideSelection = true;
             this.txtBrand.IconLeft = null;
             this.txtBrand.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1068,12 +1072,12 @@
             this.txtBrand.OnDisabledState = stateProperties14;
             stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.White;
             stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBrand.OnHoverState = stateProperties15;
             stateProperties16.BorderColor = System.Drawing.Color.DeepSkyBlue;
             stateProperties16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.ForeColor = System.Drawing.Color.White;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBrand.OnIdleState = stateProperties16;
             this.txtBrand.Padding = new System.Windows.Forms.Padding(2);
@@ -1138,6 +1142,7 @@
             this.txtCarId.DefaultText = "";
             this.txtCarId.Enabled = false;
             this.txtCarId.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtCarId.ForeColor = System.Drawing.Color.White;
             this.txtCarId.HideSelection = true;
             this.txtCarId.IconLeft = null;
             this.txtCarId.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -1164,12 +1169,12 @@
             this.txtCarId.OnDisabledState = stateProperties18;
             stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.White;
             stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCarId.OnHoverState = stateProperties19;
             stateProperties20.BorderColor = System.Drawing.Color.DeepSkyBlue;
             stateProperties20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.ForeColor = System.Drawing.Color.White;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCarId.OnIdleState = stateProperties20;
             this.txtCarId.Padding = new System.Windows.Forms.Padding(2);
@@ -1212,7 +1217,6 @@
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSelectedImage)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

@@ -216,6 +216,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\AuthenticationServices.cs" />
     <Compile Include="Common\Commons.cs" />
     <Compile Include="Handlers\CommandHandlers\AnalyticsCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\CarCommandHandler.cs" />
