@@ -21,6 +21,7 @@ namespace CarRentalSystem2.Views
         private readonly CustomerQueryHandler _customerQueryHandler;
         private readonly CustomerCommandHandler _customerCommandHandler;
         private readonly RentalCommandHandler _rentalCommandHandler;
+        private readonly PaymentCommandHandler _paymentCommandHandler;
         private List<Car> _availableCars;
         public Customer Customer { get; set; }
 
@@ -32,6 +33,7 @@ namespace CarRentalSystem2.Views
             _customerQueryHandler = new CustomerQueryHandler(Commons.ConnectionString);
             _customerCommandHandler = new CustomerCommandHandler(Commons.ConnectionString);
             _rentalCommandHandler = new RentalCommandHandler(Commons.ConnectionString);
+            _paymentCommandHandler = new PaymentCommandHandler(Commons.ConnectionString);
             _availableCars = _carQueryHandler.GetAvailableCars();
             SetupDataGridView();
         }
@@ -247,6 +249,11 @@ namespace CarRentalSystem2.Views
 
         // ------------------------- Helper Functions ------------------------- \\
 
+        private void ProcessRental()
+        {
+            
+        }
+        
         private void SetupDataGridView()
         {
             // Set the column header style
@@ -296,9 +303,16 @@ namespace CarRentalSystem2.Views
                         Status = "Rented",
                         StartDate = dtpDateRented.Value,
                         EndDate = dtpDateReturned.Value,
-                        TotalAmount = totalAmount
                     };
-                    _rentalCommandHandler.AddRental(rental);
+                    int rentalId = _rentalCommandHandler.AddRental(rental);
+                    
+                    var payment = new Payment
+                    {
+                        RentalId = rentalId,
+                        PaymentAmount = totalAmount,
+                        PaymentDate = DateTime.Now
+                    };
+                    _paymentCommandHandler.AddPayment(payment);
                 }
                 else
                 {

@@ -222,6 +222,7 @@
     <Compile Include="Handlers\CommandHandlers\CarCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\CustomerCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\InquiryCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\PaymentCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\RentalCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\UserAccountCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\UserRentalCommandHandler.cs" />
@@ -229,6 +230,7 @@
     <Compile Include="Handlers\QueryHandlers\CarQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\CustomerQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\InquiryQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\PaymentQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\RentalQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\UserAccountQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\UserRentalQueryHandler.cs" />
@@ -238,6 +240,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerInquiryRental.cs" />
     <Compile Include="Models\Inquiry.cs" />
+    <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\UserRental.cs" />

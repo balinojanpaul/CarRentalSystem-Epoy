@@ -38,7 +38,7 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                                 StartDate = (DateTime)reader["startDate"],
                                 EndDate = (DateTime)reader["endDate"],
                                 Status = reader["status"].ToString(),
-                                TotalAmount = (decimal)reader["totalAmount"]
+                              
                             });
                         }
                     }
@@ -71,7 +71,6 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                                 StartDate = (DateTime)reader["startDate"],
                                 EndDate = (DateTime)reader["endDate"],
                                 Status = reader["status"].ToString(),
-                                TotalAmount = (decimal)reader["totalAmount"]
                             };
                         }
                     }

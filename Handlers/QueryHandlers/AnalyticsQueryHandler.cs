@@ -34,7 +34,7 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                             result.Date = reader.GetDateTime("date");
                             result.TotalSales = reader.GetDecimal("totalSales");
                             result.CustomerCount = reader.GetInt32("customerCount");
-                        }
+                        } 
                     }
                 }
             }
