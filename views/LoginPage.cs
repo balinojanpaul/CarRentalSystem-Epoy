@@ -47,5 +47,16 @@ namespace CarRentalSystem2.Views
             return !string.IsNullOrWhiteSpace(txtPassword.Text) ||
                    !string.IsNullOrWhiteSpace(txtUsername.Text);
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            showRegister(new RegisterPage());
+        }
+
+        private void showRegister(object form)
+        {
+            Form f = form as Form;
+            f.Show();
+        }
     }
 }
