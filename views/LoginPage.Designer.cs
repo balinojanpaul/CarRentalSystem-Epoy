@@ -97,7 +97,7 @@
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(156, 19);
+            this.bunifuLabel5.Size = new System.Drawing.Size(200, 25);
             this.bunifuLabel5.TabIndex = 41;
             this.bunifuLabel5.Text = "Never give up, Rent a Car";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
@@ -114,7 +114,7 @@
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(107, 45);
+            this.bunifuLabel4.Size = new System.Drawing.Size(137, 54);
             this.bunifuLabel4.TabIndex = 42;
             this.bunifuLabel4.Text = "System";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -131,7 +131,7 @@
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(154, 45);
+            this.bunifuLabel2.Size = new System.Drawing.Size(195, 54);
             this.bunifuLabel2.TabIndex = 41;
             this.bunifuLabel2.Text = "Car Rental";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -316,7 +316,7 @@
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(65, 19);
+            this.bunifuLabel3.Size = new System.Drawing.Size(81, 23);
             this.bunifuLabel3.TabIndex = 39;
             this.bunifuLabel3.Text = "Username:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -333,7 +333,7 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(61, 19);
+            this.bunifuLabel1.Size = new System.Drawing.Size(75, 23);
             this.bunifuLabel1.TabIndex = 40;
             this.bunifuLabel1.Text = "Password:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -519,6 +519,7 @@
             this.btnRegister.TextMarginLeft = 0;
             this.btnRegister.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnRegister.UseDefaultRadiusAndThickness = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // LoginPage
             // 
@@ -545,6 +546,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogin;
