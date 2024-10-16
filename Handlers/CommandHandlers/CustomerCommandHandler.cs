@@ -23,7 +23,6 @@ namespace CarRentalSystem2.Handlers.CommandHandlers
                 using (MySqlCommand cmd = new MySqlCommand("AddCustomer", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    // cmd.Parameters.AddWithValue("ID", customer.CustomerId);
                     cmd.Parameters.AddWithValue("p_firstName", customer.FirstName);
                     cmd.Parameters.AddWithValue("p_lastName", customer.LastName);
                     cmd.Parameters.AddWithValue("p_middleName", customer.MiddleName);

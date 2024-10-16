@@ -215,6 +215,7 @@ namespace CarRentalSystem2.Views
             {
                 lblErrorMessage.Visible = false; // Hide error message if valid
             }
+            
         }
 
         private void cmbCarId_SelectedIndexChanged(object sender, EventArgs e)

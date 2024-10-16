@@ -139,6 +139,7 @@ namespace CarRentalSystem2.Views
             _carCommandHandler.AddCar(_car);
 
             LoadCarDataIntoDataGrid();
+            ClearFields();
         }
 
 

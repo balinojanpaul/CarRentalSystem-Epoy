@@ -103,8 +103,7 @@ namespace CarRentalSystem2.Views
 
             // Example Data: Add columns and rows for demonstration purposes
             dtgCustomers.Columns.Add("CustomerId", "Customer ID");
-            dtgCustomers.Columns.Add("CustomerFirstName", "First Name");
-            dtgCustomers.Columns.Add("CustomerLastName", "Last Name");
+            dtgCustomers.Columns.Add("Name", "Name");
             dtgCustomers.Columns.Add("EmailAddress", "Email");
             dtgCustomers.Columns.Add("ContactNumber", "Contact Number");
             dtgCustomers.Columns.Add("InquiryStatus", "Inquiry Status");

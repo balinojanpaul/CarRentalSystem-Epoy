@@ -35,7 +35,6 @@ namespace CarRentalSystem2.Views
             _rentalCommandHandler = new RentalCommandHandler(Commons.ConnectionString);
             _paymentCommandHandler = new PaymentCommandHandler(Commons.ConnectionString);
             _availableCars = _carQueryHandler.GetAvailableCars();
-            SetupDataGridView();
         }
 
 
@@ -203,7 +202,7 @@ namespace CarRentalSystem2.Views
                     if (balance >= 0)
                     {
                         // Update the label with the calculated balance formatted as currency
-                        lblBalance.Text = $@"Balance: {balance:C}";
+                        lblBalance.Text = $@"{balance:C}";
                     }
                     else
                     {
@@ -214,13 +213,13 @@ namespace CarRentalSystem2.Views
                 else
                 {
                     // If lblTotal is not a valid number, clear the balance label
-                    lblBalance.Text = @"Balance: N/A";
+                    lblBalance.Text = @"N/A";
                 }
             }
             else
             {
                 // If the input is not a valid number, clear the balance label
-                lblBalance.Text = @"Balance: N/A";
+                lblBalance.Text = @"N/A";
             }
         }
 

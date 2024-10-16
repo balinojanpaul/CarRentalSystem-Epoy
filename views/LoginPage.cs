@@ -31,8 +31,8 @@ namespace CarRentalSystem2.Views
             {
                 MessageBox.Show("User Login Successful!");
                 Dashboard dashboard = new Dashboard();
-                Close();
                 dashboard.ShowDialog();
+                Close();
             }
             else
             {
@@ -50,13 +50,29 @@ namespace CarRentalSystem2.Views
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            showRegister(new RegisterPage());
+            // Hide the current Login form
+            Hide();
+
+            // Create and show the Register form
+            RegisterPage registerPage = new RegisterPage();
+    
+            // When the Register form is closed, show the Login form again
+            registerPage.FormClosed += (s, args) => Show();
+
+            // Show the Register form
+            if (registerPage.ShowDialog() == DialogResult.OK)
+            {
+                registerPage.Close();
+            }
+            
+            Show();
         }
 
         private void showRegister(object form)
         {
             Form f = form as Form;
             f.Show();
+            // Close();
         }
     }
 }

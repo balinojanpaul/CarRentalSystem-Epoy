@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Security.Cryptography;
 using System.Text;
+using CarRentalSystem2.Models;
 using MySql.Data.MySqlClient;
 
 namespace CarRentalSystem2.Common
@@ -15,9 +16,9 @@ namespace CarRentalSystem2.Common
         }
         
         // Register a user
-        public void SignUp(string username, string password, string role)
+        public void SignUp(UserAccount user)
         {
-            string passwordHash = HashPassword(password);
+            string passwordHash = HashPassword(user.Password);
             
             using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
@@ -25,9 +26,9 @@ namespace CarRentalSystem2.Common
                 using (MySqlCommand cmd = new MySqlCommand("AddUser", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("p_username", username);
-                    cmd.Parameters.AddWithValue("p_password", password);
-                    cmd.Parameters.AddWithValue("p_role", role);
+                    cmd.Parameters.AddWithValue("p_username", user.UserName);
+                    cmd.Parameters.AddWithValue("p_password", passwordHash);
+                    cmd.Parameters.AddWithValue("p_role", user.Role);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -78,7 +79,7 @@ namespace CarRentalSystem2.Common
 
         public bool VerifyPassword(string enteredPassword, string storedHash)
         {
-            string enteredHash = HashPassword(enteredPassword);
+            string enteredHash = enteredPassword;
             return enteredHash == storedHash;
         }
     }
