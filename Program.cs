@@ -19,7 +19,7 @@ namespace CarRentalSystem2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPage());
+            Application.Run(new Dashboard());
         }
     }
 }

@@ -120,4 +120,6 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
         }
         
     }
+    
+    // TODO: Implement a SearchCustomerWithFilter function for this
 }

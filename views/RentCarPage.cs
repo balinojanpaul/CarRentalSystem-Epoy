@@ -289,12 +289,17 @@ namespace CarRentalSystem2.Views
 
         private void SaveCustomerDataAndRental(Customer customer, int carId)
         {
+            var payment = new Payment();
             try
             {
                 int customerId = _customerCommandHandler.AddCustomer(customer);
-
-                if (decimal.TryParse(txtAmount.Text, out decimal totalAmount))
+                Console.WriteLine($"Customer Id: {customerId}");
+                
+                try
                 {
+                    decimal totalsAmount = Convert.ToDecimal(txtAmount.Text);
+                    // Proceed with totalAmount
+                    
                     var rental = new Rental
                     {
                         CustomerId = customerId,
@@ -304,27 +309,61 @@ namespace CarRentalSystem2.Views
                         EndDate = dtpDateReturned.Value,
                     };
                     int rentalId = _rentalCommandHandler.AddRental(rental);
-                    
-                    var payment = new Payment
+                    Console.WriteLine($"Rental Id: {rentalId}");
+                    payment = new Payment
                     {
                         RentalId = rentalId,
-                        PaymentAmount = totalAmount,
+                        PaymentAmount = totalsAmount,
                         PaymentDate = DateTime.Now
                     };
+                    
+                    // Update the availability of the car for obvious reasons
+                    _carCommandHandler.UpdateCarAvailability(carId);
                     _paymentCommandHandler.AddPayment(payment);
+                    MessageBox.Show(@"Customer and Rental added successfully!");
                 }
-                else
+                catch (FormatException)
                 {
-                    MessageBox.Show(@"Amount should not be empty");
+                    MessageBox.Show("Invalid amount format. Please enter a valid decimal number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                catch (OverflowException)
+                {
+                    MessageBox.Show("The amount entered is too large or too small.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+                // if (decimal.TryParse(txtAmount.Text, out decimal totalAmount))
+                // {
+                //     var rental = new Rental
+                //     {
+                //         CustomerId = customerId,
+                //         CarId = carId,
+                //         Status = "Rented",
+                //         StartDate = dtpDateRented.Value,
+                //         EndDate = dtpDateReturned.Value,
+                //     };
+                //     int rentalId = _rentalCommandHandler.AddRental(rental);
+                //     Console.WriteLine($"Rental Id: {rentalId}");
+                //     payment = new Payment
+                //     {
+                //         RentalId = rentalId,
+                //         PaymentAmount = totalAmount,
+                //         PaymentDate = DateTime.Now
+                //     };
+                // }
+                // else
+                // {
+                //     MessageBox.Show(@"Amount should not be empty");
+                // }
 
                 // Update the availability of the car for obvious reasons
-                _carCommandHandler.UpdateCarAvailability(carId);
-                MessageBox.Show(@"Customer and Rental added successfully!");
+                // _carCommandHandler.UpdateCarAvailability(carId);
+                // _paymentCommandHandler.AddPayment(payment);
+                // MessageBox.Show(@"Customer and Rental added successfully!");
             }
             catch (Exception e)
             {
                 MessageBox.Show(@"There is an error adding Customer to the database");
+                Console.WriteLine(e);
             }
         }
 
@@ -404,6 +443,11 @@ namespace CarRentalSystem2.Views
                    !string.IsNullOrWhiteSpace(txtContact.Text) &&
                    cmbGender.SelectedItem != null &&
                    !string.IsNullOrWhiteSpace(txtEmail.Text);
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // Get the 
         }
     }
 }

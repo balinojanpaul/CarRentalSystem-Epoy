@@ -30,8 +30,6 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                     {
                         if (reader.Read())
                         {
-                            result.AnalyticsId = reader.GetInt32("ID");
-                            result.Date = reader.GetDateTime("date");
                             result.TotalSales = reader.GetDecimal("totalSales");
                             result.CustomerCount = reader.GetInt32("customerCount");
                         } 
