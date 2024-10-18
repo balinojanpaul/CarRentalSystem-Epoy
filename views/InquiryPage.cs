@@ -21,6 +21,7 @@ namespace CarRentalSystem2.Views
         private readonly CarQueryHandler _carQueryHandler;
         private readonly InquiryCommandHandler _inquiryCommandHandler;
         private readonly InquiryQueryHandler _inquiryQueryHandler;
+        private readonly RentalQueryHandler _rentalQueryHandler;
         private Panel _panel;
         private Customer _customer;
         private List<Inquiry> _inquiries;
@@ -37,6 +38,7 @@ namespace CarRentalSystem2.Views
             _inquiryCommandHandler = new InquiryCommandHandler(Commons.ConnectionString);
             _carQueryHandler = new CarQueryHandler(Commons.ConnectionString);
             _inquiryQueryHandler = new InquiryQueryHandler(Commons.ConnectionString);
+            _rentalQueryHandler = new RentalQueryHandler(Commons.ConnectionString);
             _customer = new Customer();
             _inquiries = _inquiryQueryHandler.GetAllInquiries();
         }
@@ -122,6 +124,8 @@ namespace CarRentalSystem2.Views
                 }
                 
                 ConvertInquiryToRental(InquiryId);
+                DisplayInquiries();
+                CleanInquiryDataGrid();
                 LoadForm(rentCarPage);
                 rentCarPage.LoadDataFromInquiry(carId);
             }
@@ -240,6 +244,7 @@ namespace CarRentalSystem2.Views
             SetupCarIdIntoCombobox();
             SetupErrorMessageLabel();
             DisplayInquiries();
+            CleanInquiryDataGrid();
         }
         
         
@@ -365,12 +370,17 @@ namespace CarRentalSystem2.Views
         {
             // Get all cars
             List<Car> cars = _carQueryHandler.GetAllCars();
+            List<Rental> rentals = _rentalQueryHandler.GetAllRentals();
 
             // Extract the car ID's
-            List<int> carIds = cars.Select(car => car.CarId).ToList();
+            // List<int> carIds = cars.Where(car => car).Select(car => car.CarId).ToList();
+            var rentedCarIds = rentals.Where(rental => rental.Status == "Rented").Select(rental => rental.CarId)
+                .ToList();
+            var availableCarIds =
+                cars.Where(car => !rentedCarIds.Contains(car.CarId)).Select(car => car.CarId).ToList();
 
             // Populate the combo boc with car ID's
-            cmbCarId.DataSource = carIds;
+            cmbCarId.DataSource = availableCarIds;
         }
 
         private void SetupErrorMessageLabel()
@@ -383,6 +393,7 @@ namespace CarRentalSystem2.Views
         private void CleanInquiryDataGrid()
         {
             _inquiryCommandHandler.DeleteRentedInquiries();
+            DisplayInquiries();
         }
 
         private bool ValidateInquiryInputs()

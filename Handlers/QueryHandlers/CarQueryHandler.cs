@@ -114,7 +114,7 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
             return cars;
         }
 
-        // TODO Make this into a List<Car> to return to avoid redundancy of adding columns in the data grid view
+        
         public List<Car> SearchCarsWithFilter(string column, string searchTerm)
         {
             var cars = new List<Car>();

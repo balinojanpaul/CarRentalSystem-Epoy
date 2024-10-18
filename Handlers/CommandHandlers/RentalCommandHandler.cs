@@ -28,7 +28,6 @@ namespace CarRentalSystem2.Handlers.CommandHandlers
                 cmd.Parameters.AddWithValue("p_startDate", rental.StartDate);
                 cmd.Parameters.AddWithValue("p_endDate", rental.EndDate);
                 cmd.Parameters.AddWithValue("p_status", rental.Status);
-                cmd.ExecuteNonQuery();
                 
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {

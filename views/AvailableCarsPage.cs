@@ -227,6 +227,7 @@ namespace CarRentalSystem2.Views
 
             // Optional: Set the grid's border style
             dtgCarList.BorderStyle = BorderStyle.None;
+            cmbFilter.SelectedIndex = 0;
 
             // Set the dock style to fill
             //dtgCarList.Dock = DockStyle.Fill;
@@ -243,7 +244,7 @@ namespace CarRentalSystem2.Views
             dtgCarList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             // Example Data: Add columns and rows for demonstration purposes
-            dtgCarList.Columns.Add("ID", "Car ID");
+            dtgCarList.Columns.Add("CarID", "Car ID");
             dtgCarList.Columns.Add("Brand", "Brand");
             dtgCarList.Columns.Add("Model", "Model");
             dtgCarList.Columns.Add("Price", "Price");
@@ -304,6 +305,7 @@ namespace CarRentalSystem2.Views
             {
                 selectedColumn = "ID";
             }
+            
             
             // Get the search from the search text box
             string searchTerm = txtSearch.Text;
