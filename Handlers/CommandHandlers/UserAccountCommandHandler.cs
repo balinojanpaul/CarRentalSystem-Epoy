@@ -18,7 +18,7 @@ namespace CarRentalSystem2.Handlers.CommandHandlers
         // Register a new user with a Hashed Password
         public void RegisterUser(UserAccount user)
         {
-            string passwordHash = null;
+            string passwordHash = HasPassword(user.Password);
             using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();

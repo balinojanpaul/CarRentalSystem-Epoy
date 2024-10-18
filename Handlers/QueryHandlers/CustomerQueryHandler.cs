@@ -61,7 +61,7 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                     cmd.Parameters.AddWithValue("p_customerId", customerId);
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        if (reader.Read())
+                        while (reader.Read())
                         {
                             customer = new Customer
                             {
@@ -109,7 +109,6 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                                 RentalStartDate = reader["rentalStartDate"] != DBNull.Value ? Convert.ToDateTime(reader["rentalStartDate"]) : (DateTime?)null,
                                 RentalEndDate = reader["rentalEndDate"] != DBNull.Value ? Convert.ToDateTime(reader["rentalEndDate"]) : (DateTime?)null,
                                 RentalStatus = reader["rentalStatus"] != DBNull.Value ? reader["rentalStatus"].ToString() : null,
-                                RentalTotalAmount = reader["rentalTotalAmount"] != DBNull.Value ? Convert.ToDecimal(reader["rentalTotalAmount"]) : (decimal?)null,
                                 RentalCarId = reader["rentalCarId"] != DBNull.Value ? Convert.ToInt32(reader["rentalCarId"]) : (int?)null,
                             });
                         }
@@ -121,4 +120,6 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
         }
         
     }
+    
+    // TODO: Implement a SearchCustomerWithFilter function for this
 }

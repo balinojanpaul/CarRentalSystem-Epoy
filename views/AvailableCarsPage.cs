@@ -139,6 +139,7 @@ namespace CarRentalSystem2.Views
             _carCommandHandler.AddCar(_car);
 
             LoadCarDataIntoDataGrid();
+            ClearFields();
         }
 
 
@@ -226,9 +227,10 @@ namespace CarRentalSystem2.Views
 
             // Optional: Set the grid's border style
             dtgCarList.BorderStyle = BorderStyle.None;
+            cmbFilter.SelectedIndex = 0;
 
             // Set the dock style to fill
-            dtgCarList.Dock = DockStyle.Fill;
+            //dtgCarList.Dock = DockStyle.Fill;
 
             // Set row styling
             dtgCarList.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
@@ -287,6 +289,47 @@ namespace CarRentalSystem2.Views
             txtPrice.Enabled = true;
             txtPrice.ReadOnly = false;
             cmbStatus.Enabled = true;
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string selectedColumn = cmbFilter.SelectedItem.ToString();
+            
+            if (string.IsNullOrEmpty(selectedColumn))
+            {
+                MessageBox.Show("Please select a filter column.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (selectedColumn == "Car Id")
+            {
+                selectedColumn = "ID";
+            }
+            
+            
+            // Get the search from the search text box
+            string searchTerm = txtSearch.Text;
+            
+            // Call the method and bind the result to the DataGridView
+            
+            List<Car> cars = _carQueryHandler.SearchCarsWithFilter(selectedColumn, searchTerm);
+    
+            // Clear the DataGridView rows before loading new data
+            dtgCarList.Rows.Clear();
+
+            // Add rows to the DataGridView
+            if (cars != null)
+            {
+                foreach (var car in cars)
+                {
+                    string availability = car.Availability ? "Available" : "Not Available";
+                    dtgCarList.Rows.Add(car.CarId, car.Brand, car.Model, car.PricePerDay, availability);
+                }
+            }
+            
+            // Call the stored procedure and bind the result to the DataGridView
+            // DataTable result = _carQueryHandler.SearchCarsWithFilter(selectedColumn, searchTerm);
+            // dtgCarList.DataSource = result;
         }
     }
 }

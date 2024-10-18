@@ -21,6 +21,7 @@ namespace CarRentalSystem2.Views
         private readonly CustomerQueryHandler _customerQueryHandler;
         private readonly CustomerCommandHandler _customerCommandHandler;
         private readonly RentalCommandHandler _rentalCommandHandler;
+        private readonly PaymentCommandHandler _paymentCommandHandler;
         private List<Car> _availableCars;
         public Customer Customer { get; set; }
 
@@ -32,8 +33,8 @@ namespace CarRentalSystem2.Views
             _customerQueryHandler = new CustomerQueryHandler(Commons.ConnectionString);
             _customerCommandHandler = new CustomerCommandHandler(Commons.ConnectionString);
             _rentalCommandHandler = new RentalCommandHandler(Commons.ConnectionString);
+            _paymentCommandHandler = new PaymentCommandHandler(Commons.ConnectionString);
             _availableCars = _carQueryHandler.GetAvailableCars();
-            SetupDataGridView();
         }
 
 
@@ -201,7 +202,7 @@ namespace CarRentalSystem2.Views
                     if (balance >= 0)
                     {
                         // Update the label with the calculated balance formatted as currency
-                        lblBalance.Text = $@"Balance: {balance:C}";
+                        lblBalance.Text = $@"{balance:C}";
                     }
                     else
                     {
@@ -212,13 +213,13 @@ namespace CarRentalSystem2.Views
                 else
                 {
                     // If lblTotal is not a valid number, clear the balance label
-                    lblBalance.Text = @"Balance: N/A";
+                    lblBalance.Text = @"N/A";
                 }
             }
             else
             {
                 // If the input is not a valid number, clear the balance label
-                lblBalance.Text = @"Balance: N/A";
+                lblBalance.Text = @"N/A";
             }
         }
 
@@ -247,6 +248,11 @@ namespace CarRentalSystem2.Views
 
         // ------------------------- Helper Functions ------------------------- \\
 
+        private void ProcessRental()
+        {
+            
+        }
+        
         private void SetupDataGridView()
         {
             // Set the column header style
@@ -284,12 +290,17 @@ namespace CarRentalSystem2.Views
 
         private void SaveCustomerDataAndRental(Customer customer, int carId)
         {
+            var payment = new Payment();
             try
             {
                 int customerId = _customerCommandHandler.AddCustomer(customer);
-
-                if (decimal.TryParse(txtAmount.Text, out decimal totalAmount))
+                Console.WriteLine($"Customer Id: {customerId}");
+                
+                try
                 {
+                    decimal totalsAmount = Convert.ToDecimal(txtAmount.Text);
+                    // Proceed with totalAmount
+                    
                     var rental = new Rental
                     {
                         CustomerId = customerId,
@@ -297,22 +308,63 @@ namespace CarRentalSystem2.Views
                         Status = "Rented",
                         StartDate = dtpDateRented.Value,
                         EndDate = dtpDateReturned.Value,
-                        TotalAmount = totalAmount
                     };
-                    _rentalCommandHandler.AddRental(rental);
+                    int rentalId = _rentalCommandHandler.AddRental(rental);
+                    Console.WriteLine($"Rental Id: {rentalId}");
+                    payment = new Payment
+                    {
+                        RentalId = rentalId,
+                        PaymentAmount = totalsAmount,
+                        PaymentDate = DateTime.Now
+                    };
+                    
+                    // Update the availability of the car for obvious reasons
+                    _carCommandHandler.UpdateCarAvailability(carId);
+                    _paymentCommandHandler.AddPayment(payment);
+                    MessageBox.Show(@"Customer and Rental added successfully!");
                 }
-                else
+                catch (FormatException)
                 {
-                    MessageBox.Show(@"Amount should not be empty");
+                    MessageBox.Show("Invalid amount format. Please enter a valid decimal number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                catch (OverflowException)
+                {
+                    MessageBox.Show("The amount entered is too large or too small.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+                // if (decimal.TryParse(txtAmount.Text, out decimal totalAmount))
+                // {
+                //     var rental = new Rental
+                //     {
+                //         CustomerId = customerId,
+                //         CarId = carId,
+                //         Status = "Rented",
+                //         StartDate = dtpDateRented.Value,
+                //         EndDate = dtpDateReturned.Value,
+                //     };
+                //     int rentalId = _rentalCommandHandler.AddRental(rental);
+                //     Console.WriteLine($"Rental Id: {rentalId}");
+                //     payment = new Payment
+                //     {
+                //         RentalId = rentalId,
+                //         PaymentAmount = totalAmount,
+                //         PaymentDate = DateTime.Now
+                //     };
+                // }
+                // else
+                // {
+                //     MessageBox.Show(@"Amount should not be empty");
+                // }
 
                 // Update the availability of the car for obvious reasons
-                _carCommandHandler.UpdateCarAvailability(carId);
-                MessageBox.Show(@"Customer and Rental added successfully!");
+                // _carCommandHandler.UpdateCarAvailability(carId);
+                // _paymentCommandHandler.AddPayment(payment);
+                // MessageBox.Show(@"Customer and Rental added successfully!");
             }
             catch (Exception e)
             {
                 MessageBox.Show(@"There is an error adding Customer to the database");
+                Console.WriteLine(e);
             }
         }
 
@@ -392,6 +444,11 @@ namespace CarRentalSystem2.Views
                    !string.IsNullOrWhiteSpace(txtContact.Text) &&
                    cmbGender.SelectedItem != null &&
                    !string.IsNullOrWhiteSpace(txtEmail.Text);
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // Get the 
         }
     }
 }

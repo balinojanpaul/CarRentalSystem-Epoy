@@ -151,6 +151,7 @@
             // dtgCustomers
             // 
             this.dtgCustomers.AllowCustomTheming = true;
+            this.dtgCustomers.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.dtgCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;

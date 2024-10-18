@@ -113,5 +113,43 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
 
             return cars;
         }
+
+        
+        public List<Car> SearchCarsWithFilter(string column, string searchTerm)
+        {
+            var cars = new List<Car>();
+
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SearchCarsWithFilter", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Add the column and search term parameters
+                    cmd.Parameters.AddWithValue("p_column", column);
+                    cmd.Parameters.AddWithValue("p_searchTerm", searchTerm);
+
+                    // Execute the query and read the results
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            cars.Add(new Car
+                            {
+                                CarId = reader["carId"] != DBNull.Value ? Convert.ToInt32(reader["carId"]) : 0,
+                                Brand = reader["brand"].ToString(),
+                                Model = reader["model"].ToString(),
+                                PricePerDay = reader["pricePerDay"] != DBNull.Value ? Convert.ToDecimal(reader["pricePerDay"]) : 0,
+                                Availability = reader["availability"] != DBNull.Value && Convert.ToBoolean(Convert.ToInt32(reader["availability"])),
+                                ImagePath = reader["imagePath"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            return cars;
+        }
     }
 }

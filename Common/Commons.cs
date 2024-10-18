@@ -37,5 +37,31 @@ namespace CarRentalSystem2.Common
                 }
             }
         }
+
+        public static DataTable SearchCustomerWithFilter(string column, string searchTerm)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection conn = new MySqlConnection(ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("SearchCustomerWithFilter", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    
+                    // Add the column and search term parameters
+                    cmd.Parameters.AddWithValue("p_column", column);
+                    cmd.Parameters.AddWithValue("p_searchTerm", searchTerm);
+                    
+                    // Execute the query and fill the DataTable
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(dt);
+                    }
+                }
+            }
+
+            return dt;
+        }
     }
 }

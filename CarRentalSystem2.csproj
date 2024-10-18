@@ -57,6 +57,15 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -79,6 +88,8 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
     </Reference>
@@ -200,6 +211,7 @@
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -211,16 +223,20 @@
     <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
     <Reference Include="ZstdSharp, Version=0.8.0.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
       <HintPath>packages\ZstdSharp.Port.0.8.0\lib\net462\ZstdSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\AuthenticationServices.cs" />
     <Compile Include="Common\Commons.cs" />
     <Compile Include="Handlers\CommandHandlers\AnalyticsCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\CarCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\CustomerCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\InquiryCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\PaymentCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\RentalCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\UserAccountCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\UserRentalCommandHandler.cs" />
@@ -228,6 +244,7 @@
     <Compile Include="Handlers\QueryHandlers\CarQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\CustomerQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\InquiryQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\PaymentQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\RentalQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\UserAccountQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\UserRentalQueryHandler.cs" />
@@ -237,6 +254,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerInquiryRental.cs" />
     <Compile Include="Models\Inquiry.cs" />
+    <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\UserRental.cs" />
@@ -314,6 +332,12 @@
     <Compile Include="Views\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\RegisterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RegisterPage.Designer.cs">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RentCarPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -368,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RegisterPage.resx">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RentCarPage.resx">
       <DependentUpon>RentCarPage.cs</DependentUpon>
