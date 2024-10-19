@@ -127,7 +127,7 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
             using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand("SearchCustomerWithFilter", conn))
+                using (MySqlCommand cmd = new MySqlCommand("SearchCustomersWithFilter", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("p_column", column);

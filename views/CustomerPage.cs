@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CarRentalSystem2.Common;
 using CarRentalSystem2.Handlers.QueryHandlers;
 using CarRentalSystem2.Models;
+using Org.BouncyCastle.Asn1.Cmp;
 
 namespace CarRentalSystem2.Views
 {
@@ -30,6 +31,8 @@ namespace CarRentalSystem2.Views
 
             _rentals = _rentalQueryHandler.GetAllRentals();
             _inquiries = _inquiryQueryHandler.GetAllInquiries();
+
+            
         }
 
         // ------------------------- Listener Functions ------------------------- \\
@@ -42,7 +45,56 @@ namespace CarRentalSystem2.Views
         
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            // Implement a search query when the user types the name
+            //MessageBox.Show("Text Changed Event Triggered");
+            string selectedColumn = cmbFilter.SelectedItem.ToString();
+
+            if (string.IsNullOrEmpty(selectedColumn))
+            {
+                MessageBox.Show("Please select a filter column.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (selectedColumn == "Customer Id")
+            {
+                selectedColumn = "ID";
+            }
+            else if (selectedColumn == "Contact Number")
+            {
+                selectedColumn = "contactinfo";
+            }
+            else if (selectedColumn == "Inquiry Status")
+            {
+                selectedColumn = "status";
+            }
+
+            string searchTerm = txtSearch.Text;
+
+            List<CustomerInquiryRental> customerInquiryRentals = _customerQueryHandler.SearchCustomerWithFilter(selectedColumn, searchTerm);
+            DisplayCustomerAndRental(customerInquiryRentals);
+        }
+
+        private void cmbFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbFilter.SelectedItem.ToString() == "Status")
+            {
+                lblStatus.Visible = true;
+                cmbStatusFilter.Visible = true;
+                txtSearch.ReadOnly = true;
+            }
+            else
+            {
+                lblStatus.Visible = false;
+                cmbStatusFilter.Visible = false;
+                txtSearch.ReadOnly = false;
+            }
+        }
+
+        private void cmbStatusFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Capture the selected status ("Rented" or "Inquired")
+            string selectedStatus = cmbStatusFilter.SelectedItem.ToString();
+
+            SearchCustomerWithStatusFilter(selectedStatus);
         }
 
 
@@ -86,17 +138,18 @@ namespace CarRentalSystem2.Views
             dtgCustomers.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8f, FontStyle.Bold);
             dtgCustomers.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-          /*  // Optional: Set the grid's border style
-            dtgCustomers.BorderStyle = BorderStyle.None;
+            cmbFilter.SelectedIndex = 0;
+            /*  // Optional: Set the grid's border style
+              dtgCustomers.BorderStyle = BorderStyle.None;
 
-            // Set the dock style to fill
+              // Set the dock style to fill
 
-            // Set row styling
-            dtgCustomers.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
-            dtgCustomers.RowsDefaultCellStyle.ForeColor = Color.Black; // Black text for rows
-            dtgCustomers.RowsDefaultCellStyle.SelectionBackColor = Color.LightGray; // Row selection background color
-            dtgCustomers.RowsDefaultCellStyle.SelectionForeColor = Color.Black; // Row selection text color
-*/
+              // Set row styling
+              dtgCustomers.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
+              dtgCustomers.RowsDefaultCellStyle.ForeColor = Color.Black; // Black text for rows
+              dtgCustomers.RowsDefaultCellStyle.SelectionBackColor = Color.LightGray; // Row selection background color
+              dtgCustomers.RowsDefaultCellStyle.SelectionForeColor = Color.Black; // Row selection text color
+  */
             // Set alternating row style
             //dtgCustomers.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background
 
@@ -108,6 +161,49 @@ namespace CarRentalSystem2.Views
             dtgCustomers.Columns.Add("EmailAddress", "Email");
             dtgCustomers.Columns.Add("ContactNumber", "Contact Number");
             dtgCustomers.Columns.Add("InquiryStatus", "Inquiry Status");
+        }
+
+        private void SearchCustomerWithStatusFilter(string status)
+        {
+            var customers = _customerQueryHandler.SearchCustomerWithFilter("status", status);
+            DisplayCustomerAndRental(customers);
+        }
+
+        private void DisplayCustomerAndRental(List<CustomerInquiryRental> customers)
+        {
+            dtgCustomers.Rows.Clear();
+            //MessageBox.Show($"Customer ID: {customerInquiryRentals.Count}");
+
+            if (customers != null)
+            {
+                foreach (var customer in customers)
+                {
+                    string inquiryStatus;
+
+                    // Check if InquiryStatus is "Inquired"
+                    if (customer.InquiryStatus == "Inquired")
+                    {
+                        inquiryStatus = "Inquired";
+                    }
+                    // Check if RentalStatus is "Rented"
+                    else if (customer.RentalStatus == "Rented")
+                    {
+                        inquiryStatus = "Rented";
+                    }
+                    // Default to "No Status" if neither condition is met
+                    else
+                    {
+                        inquiryStatus = "No Status";
+                    }
+                    dtgCustomers.Rows.Add(
+                        customer.CustomerId,
+                        customer.CustomerFirstName + " " + customer.CustomerLastName,
+                        customer.EmailAddress,
+                        customer.ContactNumber,
+                        inquiryStatus
+                        );
+                }
+            }
         }
     }
 }
