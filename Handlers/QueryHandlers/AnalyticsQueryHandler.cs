@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Data;
 using CarRentalSystem2.Models;
 using CarRentalSystem2.Models;
@@ -32,6 +33,14 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
                         {
                             result.TotalSales = reader.GetDecimal("totalSales");
                             result.CustomerCount = reader.GetInt32("customerCount");
+                            if (storedProcedure == "GetMonthlySalesAndCustomerAnalytics")
+                            {
+                                result.Date = DateTime.Now;
+                            }
+                            else
+                            {
+                                result.Date = reader["paymentDate"] != DBNull.Value ? (DateTime)reader["paymentDate"] : DateTime.Now;
+                            }
                         } 
                     }
                 }

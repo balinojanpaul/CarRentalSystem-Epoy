@@ -43,6 +43,8 @@
             this.dtgCustomers = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbStatusFilter = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.lblStatus = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +58,8 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 15;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.lblStatus);
+            this.bunifuPanel2.Controls.Add(this.cmbStatusFilter);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel2.Controls.Add(this.cmbFilter);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel4);
@@ -121,6 +125,12 @@
             this.cmbFilter.ItemHeight = 26;
             this.cmbFilter.ItemHighLightColor = System.Drawing.Color.SkyBlue;
             this.cmbFilter.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmbFilter.Items.AddRange(new object[] {
+            "Customer Id",
+            "Name",
+            "Email",
+            "Contact Number",
+            "Status"});
             this.cmbFilter.ItemTopMargin = 3;
             this.cmbFilter.Location = new System.Drawing.Point(386, 50);
             this.cmbFilter.Margin = new System.Windows.Forms.Padding(2);
@@ -130,6 +140,7 @@
             this.cmbFilter.Text = null;
             this.cmbFilter.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.cmbFilter.TextLeftMargin = 5;
+            this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.cmbFilter_SelectedIndexChanged);
             // 
             // bunifuLabel4
             // 
@@ -301,6 +312,74 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
+            // cmbStatusFilter
+            // 
+            this.cmbStatusFilter.BackColor = System.Drawing.Color.Transparent;
+            this.cmbStatusFilter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.cmbStatusFilter.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbStatusFilter.BorderRadius = 5;
+            this.cmbStatusFilter.Color = System.Drawing.Color.DeepSkyBlue;
+            this.cmbStatusFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmbStatusFilter.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbStatusFilter.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmbStatusFilter.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbStatusFilter.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmbStatusFilter.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmbStatusFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbStatusFilter.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmbStatusFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStatusFilter.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbStatusFilter.FillDropDown = true;
+            this.cmbStatusFilter.FillIndicator = false;
+            this.cmbStatusFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStatusFilter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbStatusFilter.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbStatusFilter.FormattingEnabled = true;
+            this.cmbStatusFilter.Icon = null;
+            this.cmbStatusFilter.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbStatusFilter.IndicatorColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbStatusFilter.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbStatusFilter.IndicatorThickness = 2;
+            this.cmbStatusFilter.IsDropdownOpened = false;
+            this.cmbStatusFilter.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.cmbStatusFilter.ItemBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbStatusFilter.ItemForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.cmbStatusFilter.ItemHeight = 26;
+            this.cmbStatusFilter.ItemHighLightColor = System.Drawing.Color.SkyBlue;
+            this.cmbStatusFilter.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmbStatusFilter.Items.AddRange(new object[] {
+            "Rented",
+            "Inquired"});
+            this.cmbStatusFilter.ItemTopMargin = 3;
+            this.cmbStatusFilter.Location = new System.Drawing.Point(545, 50);
+            this.cmbStatusFilter.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbStatusFilter.Name = "cmbStatusFilter";
+            this.cmbStatusFilter.Size = new System.Drawing.Size(144, 32);
+            this.cmbStatusFilter.TabIndex = 43;
+            this.cmbStatusFilter.Text = null;
+            this.cmbStatusFilter.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbStatusFilter.TextLeftMargin = 5;
+            this.cmbStatusFilter.Visible = false;
+            this.cmbStatusFilter.SelectedIndexChanged += new System.EventHandler(this.cmbStatusFilter_SelectedIndexChanged);
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AllowParentOverrides = false;
+            this.lblStatus.AutoEllipsis = false;
+            this.lblStatus.CursorType = null;
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblStatus.Location = new System.Drawing.Point(545, 29);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblStatus.Size = new System.Drawing.Size(35, 17);
+            this.lblStatus.TabIndex = 44;
+            this.lblStatus.Text = "Status";
+            this.lblStatus.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblStatus.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblStatus.Visible = false;
+            // 
             // CustomerPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,5 +410,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuDataGridView dtgCustomers;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
+        private Bunifu.UI.WinForms.BunifuLabel lblStatus;
+        private Bunifu.UI.WinForms.BunifuDropdown cmbStatusFilter;
     }
 }
