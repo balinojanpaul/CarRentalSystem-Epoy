@@ -50,7 +50,7 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
         
         
         // Fetch a car by ID
-        public Car GetCarById( int carId)
+        public Car GetCarById(int carId)
         {
             Car car = null;
 

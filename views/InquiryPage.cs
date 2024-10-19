@@ -340,7 +340,10 @@ namespace CarRentalSystem2.Views
 
             // Optional: Set the grid's border style
             dtgCustomerInquiry.BorderStyle = BorderStyle.None;
+            cmbFilter.SelectedIndex = 0;
 
+            // Set the dock style to fill
+            //dtgCustomerInquiry.Dock = DockStyle.Fill;
 
             // Set row styling
             dtgCustomerInquiry.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
@@ -405,6 +408,61 @@ namespace CarRentalSystem2.Views
                    cmbGender.SelectedItem != null;
         }
 
-        
+        // TODO: Revise the stored proc to only search the shit through inquiries only and no rentals to avoid conflicts
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Text Changed Event Triggered"); // Test if event fires
+            string selectedColumn = cmbFilter.SelectedItem.ToString();
+
+            if (string.IsNullOrEmpty(selectedColumn))
+            {
+                MessageBox.Show("Please select a filter column.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (selectedColumn == "Inquiry Id")
+            {
+                selectedColumn = "ID";
+            }
+            else if (selectedColumn == "Car Id")
+            {
+                selectedColumn = "carID";
+            }
+            else if (selectedColumn == "Contact")
+            {
+                selectedColumn = "contactinfo";
+            } else if (selectedColumn == "Customer Id")
+            {
+                selectedColumn = "customerId";
+            }
+
+
+            string searchTerm = txtSearch.Text;
+
+            //List<CustomerInquiryRental> customerInquiryRentals = _customerQueryHandler.SearchCustomerWithFilter(selectedColumn, searchTerm);
+            List<Inquiry> inquiries = _inquiryQueryHandler.SearchInquiriesWithFilter(selectedColumn, searchTerm);
+            
+
+            // Clear the DataGridView rows before loading new data
+            dtgCustomerInquiry.Rows.Clear();
+
+            // Add rows to the DataGridView
+            if (inquiries != null)
+            {
+                //MessageBox.Show($"{inquiries.Count}");
+                foreach (var inquiry in inquiries)
+                {
+                    //MessageBox.Show($"Inquiry Id: {inquiry.InquiryId}, Customer Id: {inquiry.CustomerId}, Car Id: {inquiry.CarId}");
+                    Car car = _carQueryHandler.GetCarById(inquiry.CarId);
+                    Customer customer = _customerQueryHandler.GetCustomerById(inquiry.CustomerId);
+                    string availability = car.Availability ? "Available" : "Not Available";
+                    dtgCustomerInquiry.Rows.Add(inquiry.InquiryId, inquiry.CarId, car.Brand,car.Model, customer.FirstName + " " + customer.LastName, customer.ContactInfo, inquiry.Status, availability);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Inquiries is Null");
+            }
+        }
     }
 }

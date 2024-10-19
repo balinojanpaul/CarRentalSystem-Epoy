@@ -165,7 +165,11 @@
             this.cmbFilter.ItemHeight = 26;
             this.cmbFilter.ItemHighLightColor = System.Drawing.Color.SkyBlue;
             this.cmbFilter.ItemHighLightForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.cmbFilter.Items.AddRange(new object[] { "Car Id", "Brand", "Model", "Price", "Status" });
+            this.cmbFilter.Items.AddRange(new object[] {
+            "Car Id",
+            "Brand",
+            "Model",
+            "Price"});
             this.cmbFilter.ItemTopMargin = 3;
             this.cmbFilter.Location = new System.Drawing.Point(236, 9);
             this.cmbFilter.Margin = new System.Windows.Forms.Padding(2);
@@ -1122,7 +1126,7 @@
             this.btnRent.IdleBorderRadius = 10;
             this.btnRent.IdleBorderThickness = 2;
             this.btnRent.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnRent.IdleIconLeftImage = global::CarRentalSystem2.Properties.Resources.carrent;
+            this.btnRent.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnRent.IdleIconLeftImage")));
             this.btnRent.IdleIconRightImage = null;
             this.btnRent.IndicateFocus = false;
             this.btnRent.Location = new System.Drawing.Point(556, 146);
@@ -1299,7 +1303,10 @@
             this.cmbGender.ItemHeight = 26;
             this.cmbGender.ItemHighLightColor = System.Drawing.Color.SkyBlue;
             this.cmbGender.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmbGender.Items.AddRange(new object[] { "Male", "Female", "Others" });
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Others"});
             this.cmbGender.ItemTopMargin = 3;
             this.cmbGender.Location = new System.Drawing.Point(77, 146);
             this.cmbGender.Margin = new System.Windows.Forms.Padding(2);
@@ -1554,6 +1561,7 @@
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         private Bunifu.UI.WinForms.BunifuDropdown cmbFilter;

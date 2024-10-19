@@ -305,8 +305,16 @@ namespace CarRentalSystem2.Views
             {
                 selectedColumn = "ID";
             }
-            
-            
+            else if (selectedColumn == "Price")
+            {
+                selectedColumn = "pricePerDay";
+            }
+            else if (selectedColumn == "Status")
+            {
+                selectedColumn = "availability";
+            }
+
+
             // Get the search from the search text box
             string searchTerm = txtSearch.Text;
             
