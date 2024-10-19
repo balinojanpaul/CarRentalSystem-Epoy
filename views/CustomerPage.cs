@@ -81,25 +81,24 @@ namespace CarRentalSystem2.Views
         {
             // Set the column header style
             dtgCustomers.EnableHeadersVisualStyles = false;
-            dtgCustomers.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
-            dtgCustomers.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+           /* dtgCustomers.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+            dtgCustomers.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;*/
             dtgCustomers.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8f, FontStyle.Bold);
             dtgCustomers.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            // Optional: Set the grid's border style
+          /*  // Optional: Set the grid's border style
             dtgCustomers.BorderStyle = BorderStyle.None;
 
             // Set the dock style to fill
-            dtgCustomers.Dock = DockStyle.Fill;
 
             // Set row styling
             dtgCustomers.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
             dtgCustomers.RowsDefaultCellStyle.ForeColor = Color.Black; // Black text for rows
             dtgCustomers.RowsDefaultCellStyle.SelectionBackColor = Color.LightGray; // Row selection background color
             dtgCustomers.RowsDefaultCellStyle.SelectionForeColor = Color.Black; // Row selection text color
-
+*/
             // Set alternating row style
-            dtgCustomers.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background
+            //dtgCustomers.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background
 
             dtgCustomers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 

@@ -257,19 +257,19 @@ namespace CarRentalSystem2.Views
         {
             // Set the column header style
             dtgAvailableCars.EnableHeadersVisualStyles = false;
-            dtgAvailableCars.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
-            dtgAvailableCars.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            /*dtgAvailableCars.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+            dtgAvailableCars.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;*/
             dtgAvailableCars.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10f, FontStyle.Bold);
             dtgAvailableCars.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             // Optional: Set the grid's border style
-            dtgAvailableCars.BorderStyle = BorderStyle.None;
+           // dtgAvailableCars.BorderStyle = BorderStyle.None;
             cmbFilter.SelectedIndex = 0;
 
             // Set the dock style to fill
             //dtgAvailableCars.Dock = DockStyle.Fill;
 
-            // Set row styling
+            /*// Set row styling
             dtgAvailableCars.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
             dtgAvailableCars.RowsDefaultCellStyle.ForeColor = Color.Black; // Black text for rows
             dtgAvailableCars.RowsDefaultCellStyle.SelectionBackColor =
@@ -277,7 +277,7 @@ namespace CarRentalSystem2.Views
             dtgAvailableCars.RowsDefaultCellStyle.SelectionForeColor = Color.Black; // Row selection text color
 
             // Set alternating row style
-            dtgAvailableCars.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background
+            dtgAvailableCars.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background*/
 
             dtgAvailableCars.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 

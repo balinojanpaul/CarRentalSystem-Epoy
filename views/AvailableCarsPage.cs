@@ -220,26 +220,26 @@ namespace CarRentalSystem2.Views
         {
             // Set the column header style
             dtgCarList.EnableHeadersVisualStyles = false;
-            dtgCarList.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
-            dtgCarList.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            /*dtgCarList.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+            dtgCarList.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;*/
             dtgCarList.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10f, FontStyle.Bold);
             dtgCarList.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             // Optional: Set the grid's border style
-            dtgCarList.BorderStyle = BorderStyle.None;
+            //dtgCarList.BorderStyle = BorderStyle.None;
             cmbFilter.SelectedIndex = 0;
 
             // Set the dock style to fill
             //dtgCarList.Dock = DockStyle.Fill;
 
-            // Set row styling
+           /* // Set row styling
             dtgCarList.RowsDefaultCellStyle.BackColor = Color.White; // White background for rows
             dtgCarList.RowsDefaultCellStyle.ForeColor = Color.Black; // Black text for rows
             dtgCarList.RowsDefaultCellStyle.SelectionBackColor = Color.LightGray; // Row selection background color
             dtgCarList.RowsDefaultCellStyle.SelectionForeColor = Color.Black; // Row selection text color
 
             // Set alternating row style
-            dtgCarList.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background
+            dtgCarList.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternating row background*/
 
             dtgCarList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
