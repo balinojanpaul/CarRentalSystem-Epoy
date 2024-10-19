@@ -56,7 +56,7 @@ namespace CarRentalSystem2.Views
 
             if (selectedColumn == "Customer Id")
             {
-                selectedColumn = "ID";
+                selectedColumn = "customerId";
             }
             else if (selectedColumn == "Contact Number")
             {
@@ -171,6 +171,7 @@ namespace CarRentalSystem2.Views
 
         private void DisplayCustomerAndRental(List<CustomerInquiryRental> customers)
         {
+            string inquiryStatus = "";
             dtgCustomers.Rows.Clear();
             //MessageBox.Show($"Customer ID: {customerInquiryRentals.Count}");
 
@@ -178,7 +179,6 @@ namespace CarRentalSystem2.Views
             {
                 foreach (var customer in customers)
                 {
-                    string inquiryStatus;
 
                     // Check if InquiryStatus is "Inquired"
                     if (customer.InquiryStatus == "Inquired")
@@ -191,10 +191,6 @@ namespace CarRentalSystem2.Views
                         inquiryStatus = "Rented";
                     }
                     // Default to "No Status" if neither condition is met
-                    else
-                    {
-                        inquiryStatus = "No Status";
-                    }
                     dtgCustomers.Rows.Add(
                         customer.CustomerId,
                         customer.CustomerFirstName + " " + customer.CustomerLastName,

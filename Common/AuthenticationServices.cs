@@ -38,6 +38,7 @@ namespace CarRentalSystem2.Common
         // User Login
         public bool Login(string username, string password)
         {
+            string hashedPassword = HashPassword(password);
             using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();
@@ -51,7 +52,7 @@ namespace CarRentalSystem2.Common
                         if (reader.Read())
                         {
                             string storedHash = reader["password"].ToString();
-                            return VerifyPassword(password, storedHash);
+                            return VerifyPassword(hashedPassword, storedHash);
                         }
                     }
                 }

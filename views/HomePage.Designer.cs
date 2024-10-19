@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.cmbDateFilter = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.cartesianChart2 = new LiveCharts.WinForms.CartesianChart();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -65,7 +64,6 @@
             this.bunifuPanel2.BorderRadius = 15;
             this.bunifuPanel2.BorderThickness = 1;
             this.bunifuPanel2.Controls.Add(this.cmbDateFilter);
-            this.bunifuPanel2.Controls.Add(this.cartesianChart2);
             this.bunifuPanel2.Controls.Add(this.cartesianChart1);
             this.bunifuPanel2.Location = new System.Drawing.Point(9, 178);
             this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -124,19 +122,11 @@
             this.cmbDateFilter.TextLeftMargin = 5;
             this.cmbDateFilter.SelectedIndexChanged += new System.EventHandler(this.cmbDateFilter_SelectedIndexChanged);
             // 
-            // cartesianChart2
-            // 
-            this.cartesianChart2.Location = new System.Drawing.Point(368, 39);
-            this.cartesianChart2.Name = "cartesianChart2";
-            this.cartesianChart2.Size = new System.Drawing.Size(346, 343);
-            this.cartesianChart2.TabIndex = 1;
-            this.cartesianChart2.Text = "cartTotalCustomers";
-            // 
             // cartesianChart1
             // 
-            this.cartesianChart1.Location = new System.Drawing.Point(19, 39);
+            this.cartesianChart1.Location = new System.Drawing.Point(3, 51);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(343, 343);
+            this.cartesianChart1.Size = new System.Drawing.Size(711, 343);
             this.cartesianChart1.TabIndex = 0;
             this.cartesianChart1.Text = "cartTotalSales";
             // 
@@ -396,7 +386,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private LiveCharts.WinForms.CartesianChart cartesianChart2;
         private LiveCharts.WinForms.CartesianChart cartesianChart1;
     }
 }

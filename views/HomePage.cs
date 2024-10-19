@@ -83,8 +83,7 @@ namespace CarRentalSystem2.Views
             // Clear existing series and add new data to the chart
             cartesianChart1.Series.Clear();
             cartesianChart1.Series.Add(totalPaymentSeries);
-            cartesianChart2.Series.Clear();
-            cartesianChart2.Series.Add(customerCountSeries);
+            
 
             // Set the X-axis labels (dates)
             cartesianChart1.AxisX.Clear();
@@ -111,56 +110,59 @@ namespace CarRentalSystem2.Views
                 MinValue = 0, // Minimum value on the Y-axis
                 MaxValue = 80000 // Adjust to your max data value
             });
-
-            // Set up the X-axis for the second chart (Customer Count)
-            cartesianChart2.AxisX.Clear();
-            cartesianChart2.AxisX.Add(new Axis
-            {
-                Title = "Date",
-                LabelFormatter = value => new DateTime((long)value).ToString("MM/dd/yyyy"),
-                MinValue = minDate.Ticks,
-                MaxValue = date.Ticks
-            });
-
-            // Adjust the Y-axis for the second chart (Customer Count)
-            cartesianChart2.AxisY.Clear();
-            cartesianChart2.AxisY.Add(new Axis
-            {
-                Title = "Customer Count",
-                LabelFormatter = value => value.ToString("N0"),  // Display as integer without decimal
-                MinValue = 0, // Minimum value on the Y-axis
-                MaxValue = 20 // Adjust to your max data value
-            });
         }
 
         private void LoadStatistics2()
         {
-            // Example random data for testing
-            var testSalesData = new ChartValues<decimal> { 10, 50, 30, 90, 70 };
-            var testCustomerCountData = new ChartValues<int> { 5, 60, 20, 80, 40 };
+            // Get the filter from the combo box first
+            string storedProcedure = "GetDailySalesAndCustomerAnalytics";
 
+            Analytics analyticsList = _analyticsQueryHandler.GetSalesAndCustomerAnalytics(storedProcedure);
+
+            var random = new Random();
+
+            // Random data for testing
+            var testSalesData = new ChartValues<decimal>
+    {
+        random.Next(10, 100),
+        random.Next(10, 100),
+        random.Next(10, 100),
+        random.Next(10, 100),
+        random.Next(10, 100)
+    };
+
+            var testCustomerCountData = new ChartValues<int>
+    {
+        random.Next(5, 100),
+        random.Next(5, 100),
+        random.Next(5, 100),
+        random.Next(5, 100),
+        random.Next(5, 100)
+    };
+            var totalPaymentData = new ChartValues<decimal> { 20000, 50000, 70000, analyticsList.TotalSales };
+            var customerCountData = new ChartValues<int> { 10, analyticsList.CustomerCount }; // Keep customer count data
             // Create line series for Total Payment (with filled area under the line)
             var totalPaymentSeries = new LineSeries
             {
                 Title = "Total Payment",
-                Values = testSalesData,  // Replace with actual data
+                Values = testSalesData,  // Randomized data
                 PointGeometry = DefaultGeometries.Circle,
                 StrokeThickness = 3,  // Thicker lines for visibility
                 Fill = new SolidColorBrush(System.Windows.Media.Color.FromArgb(80, 255, 0, 0)),  // Semi-transparent red fill under the line
                 LineSmoothness = 0.3,  // Controls smoothness of the line
-                Stroke = new SolidColorBrush(Color.FromRgb(255, 0, 0)),  // Line color (red)
+                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(255, 0, 0)),  // Line color (red)
             };
 
             // Create line series for Customer Count (with filled area under the line)
             var customerCountSeries = new LineSeries
             {
                 Title = "Customer Count",
-                Values = testCustomerCountData,  // Replace with actual data
+                Values = testCustomerCountData,  // Randomized data
                 PointGeometry = DefaultGeometries.Square,
                 StrokeThickness = 3,
-                Fill = new SolidColorBrush(Color.FromArgb(80, 0, 0, 255)),  // Semi-transparent blue fill
+                Fill = new SolidColorBrush(System.Windows.Media.Color.FromArgb(80, 0, 0, 255)),  // Semi-transparent blue fill
                 LineSmoothness = 0.3,  // Controls smoothness of the line
-                Stroke = new SolidColorBrush(Color.FromRgb(0, 0, 255)),  // Line color (blue)
+                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(0, 0, 255)),  // Line color (blue)
             };
 
             // Clear existing series and add new data to the chart
@@ -202,13 +204,13 @@ namespace CarRentalSystem2.Views
         private void HomePage_Load(object sender, EventArgs e)
         {
             cmbDateFilter.SelectedIndex = 0;
-            LoadStatistics();
+            LoadStatistics2();
             LoadLabels();
         }
 
         private void cmbDateFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadStatistics();
+            LoadStatistics2();
         }
     }
 }
