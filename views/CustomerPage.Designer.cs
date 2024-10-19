@@ -152,8 +152,8 @@
             // 
             this.dtgCustomers.AllowCustomTheming = true;
             this.dtgCustomers.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dtgCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgCustomers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -161,24 +161,24 @@
             this.dtgCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dtgCustomers.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dtgCustomers.CurrentTheme.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.dtgCustomers.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dtgCustomers.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Gray;
             this.dtgCustomers.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dtgCustomers.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dtgCustomers.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             this.dtgCustomers.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dtgCustomers.CurrentTheme.Name = null;
@@ -186,20 +186,20 @@
             this.dtgCustomers.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dtgCustomers.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dtgCustomers.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dtgCustomers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgCustomers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.DeepSkyBlue;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DeepSkyBlue;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgCustomers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgCustomers.EnableHeadersVisualStyles = false;
             this.dtgCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dtgCustomers.HeaderBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.HeaderBackColor = System.Drawing.Color.Gray;
             this.dtgCustomers.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dtgCustomers.HeaderForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dtgCustomers.HeaderForeColor = System.Drawing.Color.Black;
             this.dtgCustomers.Location = new System.Drawing.Point(19, 102);
             this.dtgCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.dtgCustomers.Name = "dtgCustomers";
@@ -318,6 +318,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         private Bunifu.UI.WinForms.BunifuDropdown cmbFilter;
