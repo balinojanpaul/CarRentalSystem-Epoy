@@ -76,5 +76,37 @@ namespace CarRentalSystem2.Handlers.QueryHandlers
 
             return payment;
         }
+
+
+        public Payment GetPaymentByRentalId(int rentalId)
+        {
+            var payment = new Payment();
+
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand("GetPaymentByRentalId", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("p_rentalId", rentalId);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            payment = new Payment
+                            {
+                                PaymentId = (int)reader["ID"],
+                                RentalId = (int)reader["rentalId"],
+                                PaymentAmount = (decimal)reader["paymentAmount"],
+                                PaymentDate = (DateTime)reader["paymentDate"]
+                            };
+                        }
+                    }
+                }
+            }
+
+            return payment;
+        }
     }
 }

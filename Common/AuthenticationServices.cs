@@ -62,6 +62,7 @@ namespace CarRentalSystem2.Common
         }
         
         
+
         // ---------------------- Helper Functions ---------------------- \\
         public string HashPassword(string password)
         {

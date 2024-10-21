@@ -92,9 +92,11 @@
       <HintPath>packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DotNetEnv, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\DotNetEnv.3.1.1\lib\netstandard1.3\DotNetEnv.dll</HintPath>
     </Reference>
@@ -267,6 +269,7 @@
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -304,6 +307,12 @@
     <Compile Include="Handlers\QueryHandlers\RentalQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\UserAccountQueryHandler.cs" />
     <Compile Include="Handlers\QueryHandlers\UserRentalQueryHandler.cs" />
+    <Compile Include="Helpers\CrystalReport11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Helpers\PanelStyle.cs" />
     <Compile Include="Models\Analytics.cs" />
     <Compile Include="Models\Car.cs" />
@@ -382,6 +391,12 @@
     <Compile Include="Views\InquiryPage.Designer.cs">
       <DependentUpon>InquiryPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\InvoicePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InvoicePage.Designer.cs">
+      <DependentUpon>InvoicePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,6 +415,10 @@
     <Compile Include="Views\RentCarPage.Designer.cs">
       <DependentUpon>RentCarPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Helpers\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport11.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -446,6 +465,9 @@
     <EmbeddedResource Include="Views\InquiryPage.resx">
       <DependentUpon>InquiryPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\InvoicePage.resx">
+      <DependentUpon>InvoicePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -489,6 +511,9 @@
     <None Include="Resources\people.png" />
     <Content Include="Resources\rent_car.png" />
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

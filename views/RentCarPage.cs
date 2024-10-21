@@ -11,6 +11,8 @@ using CarRentalSystem2.Common;
 using CarRentalSystem2.Handlers.CommandHandlers;
 using CarRentalSystem2.Handlers.QueryHandlers;
 using CarRentalSystem2.Models;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace CarRentalSystem2.Views
 {
@@ -292,6 +294,7 @@ namespace CarRentalSystem2.Views
         private void SaveCustomerDataAndRental(Customer customer, int carId)
         {
             var payment = new Payment();
+            InvoicePage invoice;
             try
             {
                 int customerId = _customerCommandHandler.AddCustomer(customer);
@@ -323,6 +326,10 @@ namespace CarRentalSystem2.Views
                     _carCommandHandler.UpdateCarAvailability(carId);
                     _paymentCommandHandler.AddPayment(payment);
                     MessageBox.Show(@"Customer and Rental added successfully!");
+                    Hide();
+                    invoice = new InvoicePage(rentalId, customerId);
+                    var invoiceResult = invoice.ShowDialog();
+                    MessageBox.Show("Invoice Sucessfully Generated!");
                 }
                 catch (FormatException)
                 {
@@ -490,6 +497,12 @@ namespace CarRentalSystem2.Views
                     dtgAvailableCars.Rows.Add(car.CarId, car.Brand, car.Model, car.PricePerDay, availability);
                 }
             }
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            //InvoicePage invoicePage = new InvoicePage();
+            //invoicePage.ShowDialog();
         }
     }
 }
