@@ -36,7 +36,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -57,7 +56,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -76,7 +75,6 @@
             this.dtgAvailableCars = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.btnReturn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.lblErrorMessage = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblBalance = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -344,7 +342,6 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 15;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.btnReturn);
             this.bunifuPanel1.Controls.Add(this.lblErrorMessage);
             this.bunifuPanel1.Controls.Add(this.lblBalance);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel15);
@@ -382,97 +379,6 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(717, 287);
             this.bunifuPanel1.TabIndex = 2;
             // 
-            // btnReturn
-            // 
-            this.btnReturn.AllowAnimations = true;
-            this.btnReturn.AllowMouseEffects = true;
-            this.btnReturn.AllowToggling = false;
-            this.btnReturn.AnimationSpeed = 200;
-            this.btnReturn.AutoGenerateColors = false;
-            this.btnReturn.AutoRoundBorders = false;
-            this.btnReturn.AutoSizeLeftIcon = true;
-            this.btnReturn.AutoSizeRightIcon = true;
-            this.btnReturn.BackColor = System.Drawing.Color.Transparent;
-            this.btnReturn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnReturn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReturn.BackgroundImage")));
-            this.btnReturn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnReturn.ButtonText = "Return";
-            this.btnReturn.ButtonTextMarginLeft = 0;
-            this.btnReturn.ColorContrastOnClick = 45;
-            this.btnReturn.ColorContrastOnHover = 45;
-            this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnReturn.CustomizableEdges = borderEdges1;
-            this.btnReturn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnReturn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnReturn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnReturn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnReturn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Idle;
-            this.btnReturn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnReturn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReturn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnReturn.IconLeftPadding = new System.Windows.Forms.Padding(15, 0, 3, 3);
-            this.btnReturn.IconMarginLeft = 11;
-            this.btnReturn.IconPadding = 10;
-            this.btnReturn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReturn.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnReturn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnReturn.IconSize = 20;
-            this.btnReturn.IdleBorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnReturn.IdleBorderRadius = 10;
-            this.btnReturn.IdleBorderThickness = 2;
-            this.btnReturn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnReturn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnReturn.IdleIconLeftImage")));
-            this.btnReturn.IdleIconRightImage = null;
-            this.btnReturn.IndicateFocus = false;
-            this.btnReturn.Location = new System.Drawing.Point(562, 191);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnReturn.OnDisabledState.BorderRadius = 10;
-            this.btnReturn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnReturn.OnDisabledState.BorderThickness = 2;
-            this.btnReturn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnReturn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnReturn.OnDisabledState.IconLeftImage = null;
-            this.btnReturn.OnDisabledState.IconRightImage = null;
-            this.btnReturn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnReturn.onHoverState.BorderRadius = 10;
-            this.btnReturn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnReturn.onHoverState.BorderThickness = 2;
-            this.btnReturn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnReturn.onHoverState.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnReturn.onHoverState.IconLeftImage = null;
-            this.btnReturn.onHoverState.IconRightImage = null;
-            this.btnReturn.OnIdleState.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnReturn.OnIdleState.BorderRadius = 10;
-            this.btnReturn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnReturn.OnIdleState.BorderThickness = 2;
-            this.btnReturn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnReturn.OnIdleState.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnReturn.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnReturn.OnIdleState.IconLeftImage")));
-            this.btnReturn.OnIdleState.IconRightImage = null;
-            this.btnReturn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnReturn.OnPressedState.BorderRadius = 10;
-            this.btnReturn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnReturn.OnPressedState.BorderThickness = 2;
-            this.btnReturn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnReturn.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnReturn.OnPressedState.IconLeftImage = null;
-            this.btnReturn.OnPressedState.IconRightImage = null;
-            this.btnReturn.Size = new System.Drawing.Size(129, 66);
-            this.btnReturn.TabIndex = 37;
-            this.btnReturn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnReturn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnReturn.TextMarginLeft = 0;
-            this.btnReturn.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnReturn.UseDefaultRadiusAndThickness = true;
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-            // 
             // lblErrorMessage
             // 
             this.lblErrorMessage.AllowParentOverrides = false;
@@ -480,7 +386,7 @@
             this.lblErrorMessage.CursorType = null;
             this.lblErrorMessage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorMessage.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblErrorMessage.Location = new System.Drawing.Point(607, 268);
+            this.lblErrorMessage.Location = new System.Drawing.Point(542, 225);
             this.lblErrorMessage.Margin = new System.Windows.Forms.Padding(2);
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1195,11 +1101,11 @@
             this.btnRent.ColorContrastOnClick = 45;
             this.btnRent.ColorContrastOnHover = 45;
             this.btnRent.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnRent.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnRent.CustomizableEdges = borderEdges1;
             this.btnRent.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRent.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRent.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1698,6 +1604,5 @@
         private Bunifu.UI.WinForms.BunifuLabel lblBalance;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearch;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnReturn;
     }
 }
