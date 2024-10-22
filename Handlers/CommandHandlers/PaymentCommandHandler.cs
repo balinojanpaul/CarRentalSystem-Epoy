@@ -20,12 +20,13 @@ namespace CarRentalSystem2.Handlers.CommandHandlers
             using (MySqlConnection conn = new MySqlConnection(_connectionString))
             {
                 conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand("AddRental", conn))
+                using (MySqlCommand cmd = new MySqlCommand("AddPayment", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("p_rentalID", payment.RentalId);
                     cmd.Parameters.AddWithValue("p_paymentAmount", payment.PaymentAmount);
                     cmd.Parameters.AddWithValue("p_paymentDate", payment.PaymentDate);
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
